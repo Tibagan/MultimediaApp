@@ -1,8 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f7f7fb;
 }
 
 header {
@@ -64,4 +64,20 @@ img {
 #toHome a {
     text-decoration: none;
     color: white;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    color: #a827b1;
+}
+
+h3 {
+    color: #333;
+}
+
+#selected-item {
+    color: #ff50e9;
 }
