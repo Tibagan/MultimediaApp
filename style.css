@@ -2,14 +2,53 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    background-color: #f7f7fb;
+    background-color:#9cbcde;
+}
+/*#f7f7fb*/
+header {
+    background-color: #9cbcde;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: relative;
 }
 
-header {
-    background-color: #a827b1;
+/* Logo a la izquierda */
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 80px;
+}
+
+/* Título centrado */
+header h1 {
+    margin: 0;
+    font-size: 34px;
+    font-family:cursive;
+  font-weight: 700;
+}
+
+/*Subtitulos*/
+article h3{
+    color:darkblue
+}
+/* Menú centrado debajo */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+nav ul li a {
     color: white;
-    padding: 10px;
-    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 nav ul {
@@ -39,11 +78,18 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/*imagenes */
 img {
-    max-width: 100%;
+    max-width: 450px;   /* tamaño de las imágenes */
+    width: 100%;
     height: auto;
     display: block;
-    margin: 10px 0;
+    margin: 15px auto;  /* centra las imágenes */
+}
+
+.img1 {
+    margin: auto;
+    height: 450px;
 }
 
 #toHome {
@@ -71,7 +117,7 @@ h1 {
 }
 
 h2 {
-    color: #a827b1;
+    color: #2bac3e;
 }
 
 h3 {
@@ -79,5 +125,5 @@ h3 {
 }
 
 #selected-item {
-    color: #ff50e9;
+    color: #4c4cd4;
 }
