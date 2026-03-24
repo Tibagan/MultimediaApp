@@ -11,90 +11,96 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
 
     <header>
         <img src="resources/Logo.png" alt="Logo" class="logo">
-        <h1 class="titulo">Bienestar Digital Universitario</h1>
+        <h1 id="titulo" class="titulo">Bienestar Digital Universitario</h1>
 
         <nav>
             <ul>
-                <li><a id="selected-item" href="index.html">Inicio</a></li>
-                <li><a href="modulo1.html">Comprensión del bienestar digital</a></li>
-                <li><a href="modulo2.html">Hábitos saludables en línea</a></li>
-                <li><a href="modulo3.html">Fundamentos de ciberseguridad</a></li>
-                <li><a href="modulo4.html">Gestión del tiempo digital</a></li>
-                <li><a href="modulo5.html">Salud emocional y redes sociales</a></li>
-                <li><a href="quiz.html">Quiz</a></li>
+                <li><a id="nav-inicio" href="index.html">Inicio</a></li>
+                <li><a id="nav-mod1" href="modulo1.html">Comprensión del bienestar digital</a></li>
+                <li><a id="nav-mod2" href="modulo2.html">Hábitos saludables en línea</a></li>
+                <li><a id="nav-mod3" href="modulo3.html">Fundamentos de ciberseguridad</a></li>
+                <li><a id="nav-mod4" href="modulo4.html">Gestión del tiempo digital</a></li>
+                <li><a id="nav-mod5" href="modulo5.html">Salud emocional y redes sociales</a></li>
+                <li><a id="nav-quiz" href="quiz.html">Quiz</a></li>
             </ul>
         </nav>
+
     </header>
 
     <main>
-        <h2>Bienvenido</h2>
-        <p>
+        <h2 id="bienvenido">Bienvenido</h2>
+        <p id="descripcion">
             Esta aplicación educativa tiene como objetivo promover el uso responsable y saludable de la tecnología.
             A través de diferentes módulos, aprenderás sobre hábitos digitales, ciberseguridad, gestión del tiempo
             y el impacto emocional de las redes sociales.
         </p>
 
         <section>
-            <h3 class="contenido_curso">Contenido del curso</h3>
+            <h3 id="contenido_curso" class="contenido_curso">Contenido del curso</h3>
 
-            <section class="contenedores">
+            <div class="contenedores">
                 <ul>
-                    <li>Módulo 1: Comprendiendo el bienestar digital</li>
-                    <li>Módulo 2: Hábitos saludables en línea</li>
-                    <li>Módulo 3: Fundamentos de ciberseguridad</li>
-                    <li>Módulo 4: Gestión del tiempo digital</li>
-                    <li>Módulo 5: Salud emocional y redes sociales</li>
+                    <li id="mod1-list">Módulo 1: Comprendiendo el bienestar digital</li>
+                    <li id="mod2-list">Módulo 2: Hábitos saludables en línea</li>
+                    <li id="mod3-list">Módulo 3: Fundamentos de ciberseguridad</li>
+                    <li id="mod4-list">Módulo 4: Gestión del tiempo digital</li>
+                    <li id="mod5-list">Módulo 5: Salud emocional y redes sociales</li>
                 </ul>
-                <img src="resources/Inicio.png" alt="inicio">
-            </section>
-            <p>Aprende sobre Bienestar Digital viendo el video oficial:</p>
+                <div>
+                    <img src="resources/Inicio.png" alt="inicio">
+                    <p class="ref">
+                        Imagen generada con inteligencia artificial (2026).
+                    </p>
+                </div>
 
-            <a href="https://www.youtube.com/watch?v=ETKD0K1EK4w&t=3s" target="_blank" class="btn-video">
+            </div>
+            <p id="video-text">Aprende sobre Bienestar Digital viendo el video oficial:</p>
+
+            <a id="video-btn" href="https://www.youtube.com/watch?v=ETKD0K1EK4w&t=3s" target="_blank" class="btn-video">
                 ▶ Mirar el video en YouTube
             </a>
 
-
         </section>
+
     </main>
 
-    <script src="script.js"></script>
+    <footer>
+        <p id="footer-copy">Bienestar Digital Universitario &copy; 2026</p>
+
+        <p id="footer-contacto">
+            Contacto:
+            <a href="mailto:cltibaganm@unadvirtual.edu.co">
+                cltibaganm@unadvirtual.edu.co
+            </a>
+        </p>
+
+        <p id="footer-referencias">
+            Referencias:
+            <br>
+            <a href="https://www.who.int/europe/news/item/25-09-2024-teens--screens-and-mental-health" target="_blank">
+                World Health Organization. (2024, septiembre 25). Teens, screens and mental health. Organización Mundial de la Salud. 
+            </a>
+            <br><br>
+            <a href="https://www.incibe.es/ciudadania/blog/contrasenas-seguras-te-explicamos-como-conseguirlo"
+                target="_blank">
+                Instituto Nacional de Ciberseguridad – INCIBE. (2024). ¿Contraseñas seguras? Te explicamos cómo
+                conseguirlo.
+            </a>
+        </p>
+        <!-- Botones de idioma -->
+        <div style="margin:10px;">
+            <button onclick="cambiarIdioma('es')">Español</button>
+            <button onclick="cambiarIdioma('en')">English</button>
+
+        </div>
+    </footer>
+    <script src="index.js"></script>
 </body>
-<footer>
-    <p>Bienestar Digital Universitario &copy; 2026</p>
-
-    <p>
-        Contacto:
-        <a href="mailto:cltibaganm@unadvirtual.edu.co">
-            cltibaganm@unadvirtual.edu.co
-        </a>
-    </p>
-
-    <p>
-        Referencias:
-        <br>
-
-        <a href="https://www.ncsc.gov.uk/guidance/password-guidance-simplifying-your-approach" target="_blank">
-            National Cyber Security Centre. (2023). Password guidance: Simplifying your approach. NCSC.
-        </a>
-
-        <br><br>
-
-        <a href="https://www.incibe.es/ciudadania/blog/contrasenas-seguras-te-explicamos-como-conseguirlo"
-            target="_blank">
-            Instituto Nacional de Ciberseguridad – INCIBE. (2024). ¿Contraseñas seguras? Te explicamos cómo conseguirlo.
-        </a>
-
-    </p>
-
-</footer>
 
 </html>

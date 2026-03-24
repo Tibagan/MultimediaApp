@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Quiz - Bienestar Digital</title>
     <link rel="stylesheet" href="style.css">
 
-<script>
+    <script>
 
-function calcular() {
+        function calcular() {
 
-let puntos = 0;
+            let puntos = 0;
 
-if (document.querySelector('input[name="p1"]:checked')?.value == "b") puntos++;
-if (document.querySelector('input[name="p2"]:checked')?.value == "b") puntos++;
-if (document.querySelector('input[name="p3"]:checked')?.value == "b") puntos++;
-if (document.querySelector('input[name="p4"]:checked')?.value == "b") puntos++;
-if (document.querySelector('input[name="p5"]:checked')?.value == "b") puntos++;
-if (document.querySelector('input[name="p6"]:checked')?.value == "c") puntos++;
-if (document.querySelector('input[name="p7"]:checked')?.value == "b") puntos++;
-if (document.querySelector('input[name="p8"]:checked')?.value == "b") puntos++;
-if (document.querySelector('input[name="p9"]:checked')?.value == "a") puntos++;
-if (document.querySelector('input[name="p10"]:checked')?.value == "b") puntos++;
+            if (document.querySelector('input[name="p1"]:checked')?.value == "b") puntos++;
+            if (document.querySelector('input[name="p2"]:checked')?.value == "b") puntos++;
+            if (document.querySelector('input[name="p3"]:checked')?.value == "b") puntos++;
+            if (document.querySelector('input[name="p4"]:checked')?.value == "b") puntos++;
+            if (document.querySelector('input[name="p5"]:checked')?.value == "b") puntos++;
+            if (document.querySelector('input[name="p6"]:checked')?.value == "c") puntos++;
+            if (document.querySelector('input[name="p7"]:checked')?.value == "b") puntos++;
+            if (document.querySelector('input[name="p8"]:checked')?.value == "b") puntos++;
+            if (document.querySelector('input[name="p9"]:checked')?.value == "a") puntos++;
+            if (document.querySelector('input[name="p10"]:checked')?.value == "b") puntos++;
 
-document.getElementById("resultado").innerHTML =
-"Tu puntaje es: " + puntos + " / 10";
+            document.getElementById("resultado").innerHTML =
+                "Tu puntaje es: " + puntos + " / 10";
 
-}
+        }
 
-</script>
+    </script>
 
 </head>
 
 <body>
 
-<header>
-    <img src="resources/Logo.png" alt="Logo" class="logo">
-    <h1>Bienestar Digital Universitario</h1>
+    <header>
+        <img src="resources/Logo.png" alt="Logo" class="logo">
+        <h1>Bienestar Digital Universitario</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -47,89 +48,118 @@ document.getElementById("resultado").innerHTML =
                 <li><a id="selected-item" href="quiz.html">Quiz</a></li>
             </ul>
         </nav>
-</header>
+    </header>
 
-<main>
+    <main>
 
-<section class="quiz-section">
+        <section class="quiz-section">
 
-<h2 class="quiz-title">Quiz de Bienestar Digital</h2>
+            <h2 class="quiz-title">Quiz de Bienestar Digital</h2>
 
-<form class="quiz-form">
+            <form class="quiz-form">
 
-<p>1. ¿Qué es el bienestar digital?</p>
-<input type="radio" name="p1" value="a"> Dejar de usar la tecnología<br>
-<input type="radio" name="p1" value="b"> Usar la tecnología responsablemente<br>
-<input type="radio" name="p1" value="c"> Usar el celular todo el día<br>
-
-
-<p>2. Consecuencia del uso excesivo de pantallas</p>
-<input type="radio" name="p2" value="a"> Mejor descanso<br>
-<input type="radio" name="p2" value="b"> Fatiga visual<br>
-<input type="radio" name="p2" value="c"> Más energía<br>
+                <p>1. ¿Qué es el bienestar digital?</p>
+                <input type="radio" name="p1" value="a"> Dejar de usar la tecnología<br>
+                <input type="radio" name="p1" value="b"> Usar la tecnología responsablemente<br>
+                <input type="radio" name="p1" value="c"> Usar el celular todo el día<br>
 
 
-<p>3. Para evitar problemas se recomienda</p>
-<input type="radio" name="p3" value="a"> Usar más el celular<br>
-<input type="radio" name="p3" value="b"> Hacer pausas<br>
-<input type="radio" name="p3" value="c"> No dormir<br>
+                <p>2. Consecuencia del uso excesivo de pantallas</p>
+                <input type="radio" name="p2" value="a"> Mejor descanso<br>
+                <input type="radio" name="p2" value="b"> Fatiga visual<br>
+                <input type="radio" name="p2" value="c"> Más energía<br>
 
 
-<p>4. El celular antes de dormir afecta porque</p>
-<input type="radio" name="p4" value="a"> Gasta batería<br>
-<input type="radio" name="p4" value="b"> Reduce melatonina<br>
-<input type="radio" name="p4" value="c"> No funciona<br>
+                <p>3. Para evitar problemas se recomienda</p>
+                <input type="radio" name="p3" value="a"> Usar más el celular<br>
+                <input type="radio" name="p3" value="b"> Hacer pausas<br>
+                <input type="radio" name="p3" value="c"> No dormir<br>
 
 
-<p>5. Hábito digital saludable</p>
-<input type="radio" name="p5" value="a"> Redes todo el día<br>
-<input type="radio" name="p5" value="b"> Tener horarios<br>
-<input type="radio" name="p5" value="c"> No estudiar<br>
+                <p>4. El celular antes de dormir afecta porque</p>
+                <input type="radio" name="p4" value="a"> Gasta batería<br>
+                <input type="radio" name="p4" value="b"> Reduce melatonina<br>
+                <input type="radio" name="p4" value="c"> No funciona<br>
 
 
-<p>6. Contraseña segura</p>
-<input type="radio" name="p6" value="a"> 1234<br>
-<input type="radio" name="p6" value="b"> nombre<br>
-<input type="radio" name="p6" value="c"> Larga con símbolos<br>
+                <p>5. Hábito digital saludable</p>
+                <input type="radio" name="p5" value="a"> Redes todo el día<br>
+                <input type="radio" name="p5" value="b"> Tener horarios<br>
+                <input type="radio" name="p5" value="c"> No estudiar<br>
 
 
-<p>7. Phishing es</p>
-<input type="radio" name="p7" value="a"> Juego<br>
-<input type="radio" name="p7" value="b"> Fraude<br>
-<input type="radio" name="p7" value="c"> App<br>
+                <p>6. Contraseña segura</p>
+                <input type="radio" name="p6" value="a"> 1234<br>
+                <input type="radio" name="p6" value="b"> nombre<br>
+                <input type="radio" name="p6" value="c"> Larga con símbolos<br>
 
 
-<p>8. Herramienta para organizar tiempo</p>
-<input type="radio" name="p8" value="a"> TikTok<br>
-<input type="radio" name="p8" value="b"> Calendario<br>
-<input type="radio" name="p8" value="c"> Juegos<br>
+                <p>7. Phishing es</p>
+                <input type="radio" name="p7" value="a"> Juego<br>
+                <input type="radio" name="p7" value="b"> Fraude<br>
+                <input type="radio" name="p7" value="c"> App<br>
 
 
-<p>9. Técnica para concentrarse</p>
-<input type="radio" name="p9" value="a"> Pomodoro<br>
-<input type="radio" name="p9" value="b"> Dormir<br>
-<input type="radio" name="p9" value="c"> Redes<br>
+                <p>8. Herramienta para organizar tiempo</p>
+                <input type="radio" name="p8" value="a"> TikTok<br>
+                <input type="radio" name="p8" value="b"> Calendario<br>
+                <input type="radio" name="p8" value="c"> Juegos<br>
 
 
-<p>10. Uso excesivo de redes causa</p>
-<input type="radio" name="p10" value="a"> Descanso<br>
-<input type="radio" name="p10" value="b"> Baja autoestima<br>
-<input type="radio" name="p10" value="c"> Más sueño<br>
+                <p>9. Técnica para concentrarse</p>
+                <input type="radio" name="p9" value="a"> Pomodoro<br>
+                <input type="radio" name="p9" value="b"> Dormir<br>
+                <input type="radio" name="p9" value="c"> Redes<br>
 
 
-<br>
+                <p>10. Uso excesivo de redes causa</p>
+                <input type="radio" name="p10" value="a"> Descanso<br>
+                <input type="radio" name="p10" value="b"> Baja autoestima<br>
+                <input type="radio" name="p10" value="c"> Más sueño<br>
 
-<button type="button" class="quiz-button" onclick="calcular()">
-Ver resultado
-</button>
 
-</form>
+                <br>
 
-<h3 id="resultado" class="quiz-resultado"></h3>
+                <button type="button" class="quiz-button" onclick="calcular()">
+                    Ver resultado
+                </button>
 
-</section>
+            </form>
 
-</main>
+            <h3 id="resultado" class="quiz-resultado"></h3>
 
+        </section>
+
+    </main>
+    <footer>
+        <p id="footer-copy">Bienestar Digital Universitario &copy; 2026</p>
+
+        <p id="footer-contacto">
+            Contacto:
+            <a href="mailto:cltibaganm@unadvirtual.edu.co">
+                cltibaganm@unadvirtual.edu.co
+            </a>
+        </p>
+
+        <p id="footer-referencias">
+            Referencias:
+            <br>
+            <a href="https://www.who.int/europe/news/item/25-09-2024-teens--screens-and-mental-health" target="_blank">
+                World Health Organization. (2024, septiembre 25). Teens, screens and mental health. Organización Mundial de la Salud. 
+            </a>
+            <br><br>
+            <a href="https://www.incibe.es/ciudadania/blog/contrasenas-seguras-te-explicamos-como-conseguirlo"
+                target="_blank">
+                Instituto Nacional de Ciberseguridad – INCIBE. (2024). ¿Contraseñas seguras? Te explicamos cómo
+                conseguirlo.
+            </a>
+        </p>
+        <!-- Botones de idioma -->
+        <div style="margin:10px;">
+            <button onclick="cambiarIdioma('es')">Español</button>
+            <button onclick="cambiarIdioma('en')">English</button>
+        </div>
+    </footer>
 </body>
+
 </html>
