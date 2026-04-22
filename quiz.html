@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 
     <script>
-
         function calcular() {
 
             let puntos = 0;
@@ -23,11 +22,18 @@
             if (document.querySelector('input[name="p9"]:checked')?.value == "a") puntos++;
             if (document.querySelector('input[name="p10"]:checked')?.value == "b") puntos++;
 
-            document.getElementById("resultado").innerHTML =
-                "Tu puntaje es: " + puntos + " / 10";
+            let mensaje = "Tu puntaje es: " + puntos + " / 10";
 
+            if (puntos >= 8) {
+                mensaje += " - Excelente 🎉";
+            } else if (puntos >= 5) {
+                mensaje += " - Bien 👍";
+            } else {
+                mensaje += " - Debes mejorar ⚠️";
+            }
+
+            document.getElementById("resultado").innerHTML = mensaje;
         }
-
     </script>
 
 </head>
@@ -45,7 +51,7 @@
                 <li><a href="modulo3.html">Fundamentos de ciberseguridad</a></li>
                 <li><a href="modulo4.html">Gestión del tiempo digital</a></li>
                 <li><a href="modulo5.html">Salud emocional y redes sociales</a></li>
-                <li><a id="selected-item" href="quiz.html">Quiz</a></li>
+                <li><a id="selected-item" class="activo" href="quiz.html">Quiz</a></li>
             </ul>
         </nav>
     </header>
@@ -145,7 +151,8 @@
             Referencias:
             <br>
             <a href="https://www.who.int/europe/news/item/25-09-2024-teens--screens-and-mental-health" target="_blank">
-                World Health Organization. (2024, septiembre 25). Teens, screens and mental health. Organización Mundial de la Salud. 
+                World Health Organization. (2024, septiembre 25). Teens, screens and mental health. Organización Mundial
+                de la Salud.
             </a>
             <br><br>
             <a href="https://www.incibe.es/ciudadania/blog/contrasenas-seguras-te-explicamos-como-conseguirlo"
