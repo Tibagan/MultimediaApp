@@ -1,4 +1,8 @@
 //MODULO INDEX
+let nombre = prompt("¿Cómo te llamas?");
+if (nombre) {
+    document.getElementById("bienvenido").innerHTML = "Bienvenido, " + nombre;
+}
 const textos = {
     es: {
         titulo: "Bienestar Digital Universitario",
@@ -9,6 +13,12 @@ const textos = {
         "nav-mod4": "Gestión del tiempo digital",
         "nav-mod5": "Salud emocional y redes sociales",
         "nav-quiz": "Quiz",
+
+        //HERO (AGREGADO)
+        "hero-titulo": "Controla tu vida digital",
+        "hero-texto": "Aprende a usar la tecnología de forma equilibrada y saludable en tu vida universitaria.",
+        "hero-btn": "Comenzar curso",
+
         bienvenido: "Bienvenido",
         descripcion: "Esta aplicación educativa tiene como objetivo promover el uso responsable y saludable de la tecnología. A través de diferentes módulos, aprenderás sobre hábitos digitales, ciberseguridad, gestión del tiempo y el impacto emocional de las redes sociales.",
         contenido_curso: "Contenido del curso",
@@ -45,6 +55,12 @@ const textos = {
         "nav-mod4": "Digital time management",
         "nav-mod5": "Emotional health and social media",
         "nav-quiz": "Quiz",
+
+        // HERO (AGREGADO)
+        "hero-titulo": "Take control of your digital life",
+        "hero-texto": "Learn to use technology in a balanced and healthy way in your university life.",
+        "hero-btn": "Start course",
+
         bienvenido: "Welcome",
         descripcion: "This educational application aims to promote the responsible and healthy use of technology. Through different modules, you will learn about digital habits, cybersecurity, time management, and the emotional impact of social media.",
         contenido_curso: "Course content",
@@ -56,7 +72,7 @@ const textos = {
         "video-text": "Learn about Digital Wellbeing by watching the official video:",
         "video-btn": "▶ Watch the video on YouTube",
         "footer-copy": "University Digital Wellbeing © 2026",
-        //FOOTER
+
         "footer-contacto": `Contact:
             <a href="mailto:cltibaganm@unadvirtual.edu.co">
                 cltibaganm@unadvirtual.edu.co
@@ -64,7 +80,7 @@ const textos = {
 
         "footer-referencias": `References:<br>
             <a href="https://www.who.int/europe/news/item/25-09-2024-teens--screens-and-mental-health" target="_blank">
-                World Health Organization. (2024, septiembre 25). Teens, screens and mental health. Organización Mundial de la Salud.
+                World Health Organization. (2024). Teens, screens and mental health.
             </a>
             <br><br>
             <a href="https://www.incibe.es/ciudadania/blog/contrasenas-seguras-te-explicamos-como-conseguirlo" target="_blank">
@@ -74,12 +90,9 @@ const textos = {
 };
 
 function cambiarIdioma(idioma) {
-  //  document.documentElement.lang = idioma;
-
     for (const id in textos[idioma]) {
         const el = document.getElementById(id);
         if (el) {
-            // Se usar innerHTML para no borrar etiquetas
             el.innerHTML = textos[idioma][id];
         }
     }
